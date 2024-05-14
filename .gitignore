@@ -1,6 +1,7 @@
 # misc
 .DS_Store
-
+temp/
+.vscode/
 # debug
 yarn-debug.log*
 yarn-error.log*
