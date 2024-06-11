@@ -17,7 +17,7 @@ const upload = multer({ dest: 'temp' });
 const temporaryStore = {};
 
 app.post('/upload', upload.single('file'), async (req, res) => {
-  try {
+  try { 
     const uploadUrl = await client.files.upload(req.file.path);
     await fs.rm(req.file.path); // Remove file from temp storage.
 
